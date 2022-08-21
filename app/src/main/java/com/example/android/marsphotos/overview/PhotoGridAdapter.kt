@@ -1,5 +1,6 @@
 package com.example.android.marsphotos.overview
 
+
 import android.content.ClipData.Item
 import android.provider.ContactsContract.Contacts.Photo
 import android.view.LayoutInflater
@@ -19,8 +20,6 @@ class PhotoGridAdapter : ListAdapter<MarsPhoto, PhotoGridAdapter.MarsPhotoViewHo
                 binding.executePendingBindings()
             }
     }
-
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MarsPhotoViewHolder {
         return MarsPhotoViewHolder(GridViewItemBinding.inflate(LayoutInflater.from(parent.context)))
